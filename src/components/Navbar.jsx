@@ -1,9 +1,19 @@
 import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+  useEffect(() => {
+  if (!showProfile) return;
+
+  const timer = setTimeout(() => {
+    setShowProfile(false);
+  }, 3000);
+
+  return () => clearTimeout(timer);
+}, [showProfile]);
 
   return (
     <header className="navbar">
