@@ -3,13 +3,23 @@ import "./Navbar.css";
 
 function Navbar() {
   const [showNotifications, setShowNotifications] = useState(false);
+  useEffect(() => {
+    if (!showNotifications) return;
+
+    const timer = setTimeout(() => {
+      setShowNotifications(false);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [showNotifications]);
+  
   const [showProfile, setShowProfile] = useState(false);
   useEffect(() => {
   if (!showProfile) return;
 
   const timer = setTimeout(() => {
     setShowProfile(false);
-  }, 3000);
+  }, 2000);
 
   return () => clearTimeout(timer);
 }, [showProfile]);
