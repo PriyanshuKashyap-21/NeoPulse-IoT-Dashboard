@@ -1,0 +1,39 @@
+.sidebar {
+  width: 240px;
+  background: #121a2b;
+
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.menu-item {
+  padding: 15px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  color: white;
+  text-decoration: none;
+
+  display: block;
+}
+
+.menu-item:hover {
+  background: #1f2a40;
+}
+
+.active {
+  background: #2563eb;
+}
+
+.menu-item.active:hover {
+  background: #2563eb;
+  color: white;
+}

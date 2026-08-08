@@ -1,0 +1,157 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: rgba(22, 28, 45, 0.75);
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  position: relative;
+  z-index: 1000;
+}
+
+.logo h2 {
+  font-size: 26px;
+  color: #4fd1ff;
+}
+
+.logo p {
+  font-size: 13px;
+  color: #8f9cb3;
+  margin-top: 4px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.system-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #37d67a;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #37d67a;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px rgba(55, 214, 122, 0.7);
+}
+
+.nav-action {
+  position: relative;
+}
+
+.icon-button,
+.profile-button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.icon-button {
+  font-size: 20px;
+  position: relative;
+  padding: 8px;
+}
+
+.profile-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 16px;
+  height: 16px;
+
+  background: #ef4444;
+  color: white;
+
+  border-radius: 50%;
+
+  font-size: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+
+  width: 280px;
+
+  background: #182034;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+
+  padding: 18px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+
+  z-index: 1100;
+}
+
+.dropdown h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.notification {
+  display: flex;
+  gap: 10px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.notification strong {
+  font-size: 13px;
+}
+
+.notification p {
+  color: #8f9cb3;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.profile-dropdown {
+  width: 220px;
+}
+
+.profile-role {
+  color: #8f9cb3;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.profile-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #37d67a;
+  font-size: 13px;
+}
